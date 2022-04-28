@@ -1,3 +1,1 @@
-Exercise: Associative Arrays, Lambda and Stream API
-
-Problems for exercises and homework for the "Programming Fundamentals" course @ SoftUni.
+die Aufgabenstellungen befinden sich in Associative Arrays-Exercise (1).

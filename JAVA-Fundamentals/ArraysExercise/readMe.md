@@ -1,1 +1,1 @@
-In Arrays-Exercise (1).docx sind die Aufgabenstellung.
+In Arrays-Exercise (1).docx sind die Aufgabenstellungen.

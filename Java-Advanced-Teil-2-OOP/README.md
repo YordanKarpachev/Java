@@ -3,8 +3,7 @@
 
 Themen:
 
-01.Resources;
-02.Course Introduction;
+
 03.Working with Abstraction;
 04.Exercise: Working with Abstraction;
 05.Encapsulation;

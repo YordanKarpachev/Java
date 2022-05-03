@@ -4,10 +4,7 @@
 Themen:
  
 
-01.Resources;
-02.IT Talks;
-03.Language Comparison;
-04.Course Introduction;
+
 05.Basic Syntax, Conditional Statements and Loops;
 06.Exercise: Basic Syntax, Conditional Statements and Loops;
 07.HTTP Basics;

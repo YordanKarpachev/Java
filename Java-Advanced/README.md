@@ -3,8 +3,7 @@
 
 Themen:
 
-01.Resources;
-02.Course Introduction;
+
 03.Stacks and Queues;
 04.Exercise: Stacks and Queues;
 05.Multidimensional Arrays;

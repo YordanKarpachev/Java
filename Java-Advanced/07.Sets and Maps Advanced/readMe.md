@@ -1,2 +1,2 @@
 • Sets (HashSet, TreeSet, LinkedHashSet);
-• Maps (Hashmap, TreeMap, LinkedHashMap).
+• Maps (Hashmap, TreeMap, LinkedHashMap)

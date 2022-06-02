@@ -25,4 +25,4 @@ Themen:
 21.Exam Preparation;
 22.Workshop;
 23.Regular Exam;
-24.Retake Exam;.
+24.Retake Exam;

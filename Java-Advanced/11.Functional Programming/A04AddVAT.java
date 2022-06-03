@@ -1,4 +1,4 @@
-package FunctionalProgramming;
+package FunctionalProgramingLab;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -8,14 +8,10 @@ public class A04AddVAT {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        UnaryOperator<Double> vatCalculator = vat -> vat * 1.20;
-
+      UnaryOperator<Double> vat = v -> v * 1.20;
         System.out.println("Prices with VAT:");
 
-        Arrays.stream(scanner.nextLine().split(", "))
-                .map(Double::parseDouble)
-                .map(vatCalculator)
-                .forEach(p -> System.out.printf("%.2f%n", p));
-
+        Arrays.stream(scanner.nextLine().split(", ")).map(Double::parseDouble).map(vat).forEach(a ->
+                System.out.printf("%.2f%n", a));
     }
 }

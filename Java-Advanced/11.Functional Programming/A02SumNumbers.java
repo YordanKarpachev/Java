@@ -1,5 +1,6 @@
-package FunctionalProgramming;
+package FunctionalProgramingLab;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.function.Function;
@@ -9,12 +10,10 @@ public class A02SumNumbers {
         Scanner scanner = new Scanner(System.in);
         String[] input = scanner.nextLine().split(", ");
 
-        Function<String[], Integer> countIntegerInString = str -> str.length;
-        Function<String[], Integer> sumIntegersInString = str -> Arrays.stream(input)
-                .mapToInt(Integer::parseInt)
-                .sum();
-        System.out.println("Count = "+ countIntegerInString.apply(input));
-        System.out.println("Sum = " + sumIntegersInString.apply(input));
+        Function<String[], Integer> countInt = str -> str.length;
+        Function<String[], Integer> sumAllInt = str -> Arrays.stream(input).mapToInt(Integer::parseInt).sum();
 
+         System.out.println("Count = " + countInt.apply(input));
+         System.out.println("Sum = " + sumAllInt.apply(input));
     }
 }

@@ -54,7 +54,7 @@ public class SmartArray {
         if (size - index >= 0) System.arraycopy(arr, index + 1, arr, index, size - index);
         arr[size] = null;
 
-        if(arr.length / 2 > size){
+        if(arr.length / 4 > size){
             kurzen();
         }
         return number;

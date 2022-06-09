@@ -54,7 +54,9 @@ public class SmartArray {
         if (size - index >= 0) System.arraycopy(arr, index + 1, arr, index, size - index);
         arr[size] = null;
 
-
+        if(arr.length / 2 > size){
+            kurzen();
+        }
         return number;
     }
 
@@ -76,14 +78,14 @@ public class SmartArray {
         arr[index] = element;
         add(lastElement);
 
-        if(arr.length / 2 >= size){
-           kurzen();
-        }
+
     }
 
-    private void kurzen() {
-        Integer[] newarr = new Integer[arr.length / 2];
+    private Integer[] kurzen() {
+        Integer[] newarr = new Integer[arr.length * 2];
         System.arraycopy(arr, 0, newarr, 0, arr.length);
+        return newarr;
+
     }
 
     public void forEach(Consumer<Integer> consumer){

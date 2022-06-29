@@ -1,21 +1,16 @@
-package com.softuni.WorkingWAbstractionExercise.CardsWithPower_03;
+package A03CardsWithPower;
 
 public class Card {
-    private CardSuits cardSuits;
-    private CardRanks cardRanks;
-    private int power;
+    CardSuit cardSuit;
+    CardRanks cardRanks;
+    int power;
 
-    public Card(CardSuits cardSuits, CardRanks cardRanks) {
-        this.cardSuits = cardSuits;
-        this.cardRanks = cardRanks;
+    public CardSuit getCardSuit() {
+        return cardSuit;
     }
 
-    public CardSuits getCardSuits() {
-        return cardSuits;
-    }
-
-    public void setCardSuits(CardSuits cardSuits) {
-        this.cardSuits = cardSuits;
+    public void setCardSuit(CardSuit cardSuit) {
+        this.cardSuit = cardSuit;
     }
 
     public CardRanks getCardRanks() {
@@ -27,10 +22,16 @@ public class Card {
     }
 
     public int getPower() {
-        return this.cardSuits.getSuitPower() + this.cardRanks.getPowerRank();
+        return this.cardSuit.suidPower + this.cardRanks.cardPower;
     }
 
     public void setPower(int power) {
         this.power = power;
+    }
+
+    public Card(CardSuit cardSuit, CardRanks cardRanks) {
+        this.cardSuit = cardSuit;
+        this.cardRanks = cardRanks;
+
     }
 }

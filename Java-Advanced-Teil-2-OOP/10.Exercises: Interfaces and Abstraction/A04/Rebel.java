@@ -1,6 +1,6 @@
 package A04;
 
-public class Rebel implements Person, Buyer{
+public class Rebel implements Person, Buyer {
 
     private String name;
     private int age;
@@ -11,13 +11,13 @@ public class Rebel implements Person, Buyer{
         this.name = name;
         this.age = age;
         this.group = group;
-        this.food = 0;
+
     }
 
     @Override
     public void buyFood() {
 
-     food += 5;
+     this.food += 5;
     }
 
     @Override
@@ -33,5 +33,9 @@ public class Rebel implements Person, Buyer{
     @Override
     public int getAge() {
         return this.age;
+    }
+
+    public String getGroup() {
+        return group;
     }
 }

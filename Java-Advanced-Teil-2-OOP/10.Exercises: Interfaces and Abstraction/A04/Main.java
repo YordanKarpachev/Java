@@ -39,6 +39,7 @@ public class Main {
         }
 
 
+
             System.out.println(buyerMap.entrySet()
                     .stream()
                     .map(Map.Entry::getValue)

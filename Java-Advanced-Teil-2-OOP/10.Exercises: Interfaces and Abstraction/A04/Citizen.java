@@ -1,6 +1,6 @@
 package A04;
 
-public class Citizen implements Person, Birthable, Identifiable, Buyer{
+public class Citizen implements Person,  Identifiable, Buyer {
     private String name;
     private int age;
 
@@ -15,7 +15,7 @@ public class Citizen implements Person, Birthable, Identifiable, Buyer{
         this.age = age;
         this.id = id;
         this.birthDate = birthDate;
-        this.food = 0;
+
     }
 
     @Override
@@ -40,12 +40,9 @@ public class Citizen implements Person, Birthable, Identifiable, Buyer{
     }
 
     public void buyFood(){
-     food += 10;
+    this.food += 10;
 
     }
 
-    @Override
-    public String getBirthDate() {
-        return this.birthDate;
-    }
+
 }

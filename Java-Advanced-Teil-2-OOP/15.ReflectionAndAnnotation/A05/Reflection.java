@@ -54,6 +54,7 @@ public class Reflection implements Serializable {
         return email;
     }
 
+    @Author
     public void setEmail(String email) {
         this.email = email;
     }

@@ -17,8 +17,8 @@ public class UnitFactoryImpl implements UnitFactory {
 		// TODO: implement for problem 3
 
 		Class units = Class.forName(UNITS_PACKAGE_NAME + unitType);
-		Constructor<Unit> constructor = units.getDeclaredConstructor();
-		return  constructor.newInstance();
+		Constructor<Unit> constructor = units.getConstructor();
+		return constructor.newInstance();
 
 	}
 }

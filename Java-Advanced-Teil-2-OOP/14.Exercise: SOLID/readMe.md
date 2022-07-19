@@ -1,1 +1,1 @@
-siehe doxc
+siehe doxc, ZIP resourse

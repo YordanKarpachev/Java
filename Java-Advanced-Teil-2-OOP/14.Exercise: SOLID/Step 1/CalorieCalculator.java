@@ -3,7 +3,7 @@ package solid;
 import solid.products.Chocolate;
 import solid.products.Coke;
 import solid.products.Lemonade;
-import solid.products.Print;
+import solid.products.Printer;
 
 import java.util.List;
 
@@ -11,10 +11,10 @@ public class CalorieCalculator {
 
     private static final String SUM_FORMAT = "Sum: %f";
     private static final String AVERAGE_FORMAT = "Average: %f";
-    Print print;
+    Printer print;
 
     public CalorieCalculator() {
-        this.print = new Print();
+        this.print = new Printer();
     }
 
     public double sum(List<Object> products) {
